@@ -7,7 +7,11 @@ const HANDLERS = {
   SIGN_OUT: 'SIGN_OUT'
 };
 
-
+const initialState = {
+  isAuthenticated: false,
+  isLoading: true,
+  user: null
+};
 
 const handlers = {
   [HANDLERS.INITIALIZE]: (state, action) => {
